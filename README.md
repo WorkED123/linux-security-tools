@@ -1,67 +1,70 @@
-<h1> Lesson 2.5: Network Troubleshooting  </h1>
+<h1> Lesson 3.3: Linux Security Tools </h1>
 <h2> Summary</h2>
 
-<p1>By the end of this module, learners should be able to describe the essential components of a network, including devices (routers, switches, hubs, etc.), topologies, and common protocols. This foundational knowledge will serve as the basis for identifying where potential issues arise.</p1>
+<p1>In this lesson, students embark on a comprehensive journey into cybersecurity. As the lesson progresses, a particular emphasis is placed on Linux security, delving deep into its security model and applications. Students explore the multifaceted world of cybersecurity types and understand their unique implications. The lesson culminates with hands-on experience using Kali Linux, a leading tool in cybersecurity practices, ensuring students not only understand the theoretical concepts but can also apply them practically.</p1>
 <br>
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Recognize Common Network Issues and Their Solutions.</li>
+<li>Prove Knowledge of Basic Cybersecurity Principles.</li>
   <br>
-<li>Develop a Systematic Troubleshooting Methodology.</li><br>
+<li>Develop Linux Security Skills.</li><br>
 
-<li>Implement Preventative Measures and Best Practices.</li><br>
+<li>Understand and Apply the Linux Kernel Security Model.</li><br>
+
+<li>Hands-on experience with Kali Linux</li><br>
   
-<li>Become proficient in using a variety of network diagnostic tools such as ping, traceroute, netstat, Wireshark, and others.</li>
+<li>Objective Summary and Learning Outcome.</li>
 
 </ul>
 
 <h2>Vocabulary and Acronyms</h2>
 
-<ul>
+<ul><li>
+
+**Authentication**</li>
+
 <li>
 
-  **Ping**</li>
+**Domain**</li>
   
 <li>
-
+  
+**Exploit**</li>
+<li>
+  
+**Data Breach**</li>
+<li>
+  
+**Vulnerability**</li>
+<li>
+  
+**Nmap**</li>
+<li>
+  
 **Wireshark**</li>
-  
 <li>
   
-**Traceroute**</li>
-
-<li>
-
-**Methodology**</li>
-  
-<li>
-  
-**Netstat**</li>
+**SQLmap**</li>
 
 <li>
   
-**OSI Model**</li>
+**Malware**</li>
 
 </ul>
 
 <h2>NICE Framework KSAs</h2>
 <ul>
-<li>K0001 - Knowledge of computer networking concepts, protocols, and network security methodologies.</li>
+<li>K0224 - Knowledge of system administration concepts for operating systems such as but not limited to Unix/Linux, IOS, Android, and Windows operating systems.</li>
 <br>
-<li>K0010 - Knowledge of communication methods, principles, and ideas that support the network infrastructure.</li>
+<li>K0397 - Knowledge of security concepts in operating systems (e.g., Linux, Unix.)</li>
 <br>
-<li>K0011 - Knowledge of capabilities and applications of network equipmentK0029	Knowledge of the organization's Local and Wide Area Network connections.</li>
+<li>K0537 - Knowledge of system administration concepts for the Unix/Linux and Windows operating systems (e.g., process management, directory structure, installed applications, Access Controls).</li>
 <br>
-<li>K0034 - Knowledge of network services and protocol interactions that provide network communications.</li>
+<li>S0067 - Skill in identifying, modifying, and manipulating applicable system components within Windows, Unix, or Linux (e.g., passwords, user accounts, files).</li>
 <br>
-<li>K0057 - Knowledge of network hardware devices and functions.</li>
-<br>
-<li>K0061 - Knowledge of how traffic flows across the network</li>
-<br>
-<li>K0111 - Knowledge of network tools</li>
-<br>
-<li>K0113 - Knowledge of different types of network communication</li>
+<li>K0608 - Knowledge of Unix/Linux and Windows operating systems structures and internals (e.g., process management, directory structure, installed applications).</li>
+
 </ul>
 
 
@@ -70,123 +73,71 @@
 <br>
 
 
-<h2>Introduction</h2>
-Today, we'll delve deep into the world of network troubleshooting. As our reliance on networks grows, so does ensuring they run smoothly. Whether you're a budding IT professional or just curious about how networks function, today's lecture will equip you with the knowledge and skills to approach network issues methodically.
+<h2>Linux Security Tools: A Comprehensive Overview</h2>
 
-<h2>Understanding Network Fundamentals and Architecture</h2>
-
-Before we can fix a problem, we need to understand the system. Every network, regardless of its size or complexity, is built upon foundational components:
-
-Devices are tangible components like routers, switches, and hubs. Each plays a unique role in directing, transmitting, or amplifying data.
+Linux has always been at the forefront regarding cybersecurity, offering various tools for various tasks and environments. Whether it's for network tunneling, sniffing, scanning, mapping, or even specialized use cases like WiFi networks, web applications, or database servers, there's probably a tool for it. Today, we dive into ten such eminent tools.
 
 <ul>
-	<li><h4><ins>Topologies:</ins></li></h4>
+	<li><h4><ins>Aircrackng for WiFi network security</ins></h4></li>
 	<ul>
-		<li>This refers to the physical or logical layout of a network. The structure can influence where and how issues arise, whether it's a star, ring, or mesh topology.</li>
+		<li><ins>Function:</ins> Testing the security of wireless networks.</li>
+		<li><ins>Details:</ins> Aircrack-ng suite assists in capturing packets, decrypting WiFi passwords, and detecting vulnerabilities within a wireless environment. </li>
 	</ul>
-	<li><h4><ins>Protocols:</ins></li></h4>
+	<li><h4><ins>Burp Suite targets web app security</ins></h4></li>
 	<ul>
-		<li> These are the rules that govern data transmission. Familiar names like TCP/IP or HTTP dictate how data packets are sent, received, and interpreted.</li>
+		<li><ins>Function:</ins> Security assessment.</li>
+		<li><ins>Details:</ins> This local proxy solution intercepts and records web requests and responses. It allows Cyber Professionals to modify submissions, helping to identify vulnerabilities and weaknesses in web apps.</li>
+	</ul>
+	<li><h4><ins>Impacket for pen testing network protocols</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Testing network protocols and services.</li>
+		<li><ins>Details:</ins>  An assortment of Python classes, Impacket allows users to create and interpret network packets. Its modular approach is ideal for protocol-centric pen testing.</li>
+	</ul>
+	<li><h4><ins>Metasploit: A super tool for detecting exploits</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Comprehensive penetration testing and vulnerability assessment.</li>
+		<li><ins>Details:</ins> A treasure trove for penetration testers, Metasploit has a vast database of exploits and payloads, making vulnerability discovery and exploitation streamlined.</li>
+	</ul>
+	<li><h4><ins>NCAT probes network connectivity</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Networking utility.</li>
+		<li><ins>Details:</ins> An enhanced version of NETCAT, NCAT can act as both client and server and is perfect for sending and receiving data over a network, especially with added features like SSL.</li>
+	</ul>
+	<li><h4><ins>NMAP scans and maps networks<</ins>/h4></li>
+	<ul>
+		<li><ins>Function:</ins> Network discovery and security auditing.</li>
+		<li><ins>Details:</ins> With its versatile range of options, NMAP can detect devices running on a network and find open ports with various network attributes.</li>
+	</ul>
+	<li><h4><ins>ProxyChains for network tunneling</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Concealing network activity.</li>
+		<li><ins>Details:</ins> Cyber Professionals use ProxyChains to obfuscate their digital footprints, chaining their requests through multiple proxies to stay concealed.</li>
+	</ul>
+	<li><h4><ins>Responder simulates attacks on DNS systems</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Simulating name resolution-based attacks.</li>
+		<li><ins>Details:</ins> Responder listens for DNS requests and can potentially poison these requests, tricking systems into divulging valuable information.</li>
+	</ul>
+	<li><h4><ins>sqlmap looks for SQL injection flaws in database servers</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Detecting and exploiting SQL injection vulnerabilities.</li>
+		<li><ins>Details:</ins> A goto tool for SQL vulnerabilities, sqlmap automates the entire process of detecting and exploiting SQL injection flaws.</li>
+	</ul>
+	<li><h4><ins>Wireshark: Popular network protocol analyzer</ins></h4></li>
+	<ul>
+		<li><ins>Function:</ins> Analyzing network protocols.</li>
+		<li><ins>Details:</ins> A longstanding tool, Wireshark captures packets in real-time and displays them in a human-readable table format, helping troubleshoot and analyze network problems.</li>
 	</ul>
 </ul>
 
 
-<h2>Mastering Diagnostic Tools and Software</h2>
-Network professionals have tools like a doctor using a stethoscope or X-ray machine. Some of the most essential include:
-
-<ul>
-	<li><h4><ins>Ping:</ins></h4></li>
-	<ul>
-		<li>Tests the reachability of a host and measures the roundtrip time for packets.
-		</li>
-	</ul>
-	<li><h4><ins>Traceroute:</ins></h4></li>
-	<ul>
-		<li>Displays the path that a packet takes to reach a destination. 
-		</li>
-	</ul>
-	<li><h4><ins>Netstat:</ins></h4></li>
-	<ul>
-		<li>Provides network statistics and information about current network connections. 
-		</li>
-	</ul>
-	<li><h4><ins>Wireshark:</ins></h4></li>
-	<ul>
-		<li>A packet analyzer that lets you see what's happening on your network at a microscopic level.
-		</li>
-	</ul>
-</ul>
-
-Each tool provides a unique lens to view the network; mastering them is crucial for effective troubleshooting.
-
-<h2>Systematic Troubleshooting Methodology</h2>
-
-When faced with a network issue, jumping in and making changes is tempting. However, a systematic approach is critical: <br>
-
-<ul>
-	<li>1. Identify Symptoms: Gather as much information as possible before anything else. </li>
-	<br>
-	<ul>
-		<li>Are certain users affected? </li><br>
-		<li>Is it a specific type of traffic or application?</li><br>
-	</ul>
-	<li>2. Isolate the Problem: Narrow down the cause. </li>
-	<br>
-	<ul>
-		<li>Is it a hardware failure? </li><br>
-		<li>A software glitch? </li><br>
-		<li>Or a misconfiguration?</li><br>
-	</ul>
-	<li>3. Implement Solutions: Once the root cause is identified, apply the necessary fix, whether replacing a faulty cable, updating software, or tweaking configurations.</li>
-</ul>
 
 
-<h2>Recognizing Common Network Issues</h2>
-
-Experience teaches us that specific issues crop up more frequently than others:
-
-<ul>
-	<li><h4><ins>IP Conflicts:</ins></h4></li>
-	<ul>
-		<li>When two devices on the same network are assigned the same IP address.</li>
-	</ul>
-	<li><h4><ins>DNS Issues: </ins></h4></li>
-	<ul>
-		<li>Problems resolving domain names to IP addresses can prevent websites from loading.  </li>
-	</ul>
-	<li><h4><ins>Connectivity Losses: </ins></h4></li>
-	<ul>
-		<li>This can be due to many reasons, from physical cable damages to router malfunctions. </li>
-	</ul>
-	<li><h4><ins>Slow Performance:</ins></h4></li>
-	<ul>
-		<li>Often due to bandwidth limitations, high network traffic, or even malware.  </li>
-	</ul>
-	<li><h4><ins>Security Breaches: </ins></h4></li>
-	<ul>
-		<li>Unauthorized access or attacks on the network.</li>
-	</ul>
-</ul>
-
-By recognizing the signs of these common issues, you can often predict and prevent them from escalating.
 
 
-<h2>Implementing Preventative Measures</h2>
-As the saying goes, "An ounce of prevention is worth a pound of cure." In the realm of networks:
-<ul>
-	<li><h4><ins>Regular Updates: </ins></h4></li>
-	<ul>
-		<li>Ensure all devices and software are up-to-date. This not only provides new features but often patches known vulnerabilities.</li>
-	</ul>
-	<li><h4><ins>Backups:</ins></h4></li>
-	<ul>
-		<li>Regularly back up configurations and critical data. In the event of a failure, this can drastically reduce recovery time.  </li>
-	</ul>
-	<li><h4><ins>Monitoring:</ins></h4></li>
-	<ul>
-		<li>Use tools to monitor network traffic, performance, and anomalies constantly. This proactive approach can alert you to issues before they become critical.</li>
-	</ul>
-</ul>
+
+
+
 
 
 
@@ -195,12 +146,13 @@ As the saying goes, "An ounce of prevention is worth a pound of cure." In the re
 
 <h2>Conclusion</h2>
 
-Network troubleshooting is as much an art as it is a science. With a solid understanding of network fundamentals, mastery of diagnostic tools, a systematic approach, and a proactive mindset, you'll be well-equipped to tackle any network challenge that comes your way. Remember, in the world of networks, knowledge truly is power. Happy troubleshooting!
+In conclusion, understanding and mastering these tools is essential for any Cyber Professional. Only assist in identifying and mitigating risks and also play a pivotal role in ensuring that systems and networks remain resilient against evolving cybersecurity threats.
 
 
 
 <h2> Presentation</h2>
 
+<a href="https://docs.google.com/presentation/d/1YF7FvOgw71sHRwFDUPOS-McXoAcs030T/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Linux Security Tools </a>
 
 
 
@@ -209,6 +161,10 @@ Network troubleshooting is as much an art as it is a science. With a solid under
 
 <h2> Additional Resources</h2>
 
-<a href="https://www.comptia.org/content/guides/a-guide-to-network-troubleshooting">A Guide to Network Troubleshooting</a> - Basic Steps, Tips and Tools. <br>
+<a href="https://owasp.org/www-pdf-archive/Analysing_Networks_with_NMAP.pdf">Analyzing Networks with NMAP</a> - NMAP Training <br>
 
-<a href="https://www.techtarget.com/searchnetworking/answer/What-are-the-3-most-common-network-issues-to-troubleshoot">Most Common Network Issues </a> - Slow network speeds, weak Wi-Fi signals and damaged cabling are just some of the most common network connection issues that IT departments need to troubleshoot.
+<a href="https://owasp.org/www-project-juice-shop/">OWASP Juice Shop</a> - OWASP Juice Shop is the most modern and sophisticated insecure web application! It can be used in security training, awareness demos, CTFs, and as a guinea pig for security tools.
+
+<a href="https://opensource.com/article/21/5/linux-security-tools">Pen testing with Linux security tools</a><br>
+
+<a href="https://linuxsecurity.expert/security-tools/top-100/">Linux security tools</a><br>
