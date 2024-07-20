@@ -55,15 +55,15 @@
 
 <h2>NICE Framework KSAs</h2>
 <ul>
-<li>K0224 - Knowledge of system administration concepts for operating systems such as but not limited to Unix/Linux, IOS, Android, and Windows operating systems.</li>
+<li>K0224: Knowledge of system administration concepts for operating systems such as but not limited to Unix/Linux, IOS, Android, and Windows operating systems.</li>
 <br>
-<li>K0397 - Knowledge of security concepts in operating systems (e.g., Linux, Unix.)</li>
+<li>K0397: Knowledge of security concepts in operating systems (e.g., Linux, Unix.)</li>
 <br>
-<li>K0537 - Knowledge of system administration concepts for the Unix/Linux and Windows operating systems (e.g., process management, directory structure, installed applications, Access Controls).</li>
+<li>K0537: Knowledge of system administration concepts for the Unix/Linux and Windows operating systems (e.g., process management, directory structure, installed applications, Access Controls).</li>
 <br>
-<li>S0067 - Skill in identifying, modifying, and manipulating applicable system components within Windows, Unix, or Linux (e.g., passwords, user accounts, files).</li>
+<li>S0067: Skill in identifying, modifying, and manipulating applicable system components within Windows, Unix, or Linux (e.g., passwords, user accounts, files).</li>
 <br>
-<li>K0608 - Knowledge of Unix/Linux and Windows operating systems structures and internals (e.g., process management, directory structure, installed applications).</li>
+<li>K0608: Knowledge of Unix/Linux and Windows operating systems structures and internals (e.g., process management, directory structure, installed applications).</li>
 
 </ul>
 
@@ -103,7 +103,7 @@ Linux has always been at the forefront regarding cybersecurity, offering various
 		<li><ins>Function:</ins> Networking utility.</li>
 		<li><ins>Details:</ins> An enhanced version of NETCAT, NCAT can act as both client and server and is perfect for sending and receiving data over a network, especially with added features like SSL.</li>
 	</ul>
-	<li><h4><ins>NMAP scans and maps networks<</ins>/h4></li>
+	<li><h4><ins>NMAP scans and maps networks</ins></h4></li>
 	<ul>
 		<li><ins>Function:</ins> Network discovery and security auditing.</li>
 		<li><ins>Details:</ins> With its versatile range of options, NMAP can detect devices running on a network and find open ports with various network attributes.</li>
@@ -146,10 +146,36 @@ Linux has always been at the forefront regarding cybersecurity, offering various
 
 <h2>Conclusion</h2>
 
-In conclusion, understanding and mastering these tools is essential for any Cyber Professional. Only assist in identifying and mitigating risks and also play a pivotal role in ensuring that systems and networks remain resilient against evolving cybersecurity threats.
+In conclusion, mastering these tools is indispensable for any cybersecurity professional. Proficiency in using tools such as Nmap, Wireshark, SQLmap, and understanding key concepts like authentication and vulnerabilities enables professionals to effectively identify and assess security risks. These tools are integral to diagnosing potential weaknesses, conducting thorough network analyses, and implementing robust security measures. By leveraging their capabilities, cybersecurity experts can proactively mitigate risks, respond to threats, and fortify systems and networks. This expertise is essential for ensuring that organizations remain resilient and well-protected against the continually evolving landscape of cyber threats, ultimately safeguarding sensitive information and maintaining operational integrity.
 
+<h2>Definitions</h2>
+<ul>
+<li><b>Authentication:</b> The process of verifying the identity of a user or system to grant access to resources.<br>
+<br>
 
+<li><b>Domain:</b> A distinct network area or administrative boundary that is managed under a common name and often used to organize resources and users.<br>
+<br>
 
+<li><b>Exploit:</b> A piece of software or a method that takes advantage of a vulnerability in a system to gain unauthorized access or cause harm.<br>
+<br>
+
+<li><b>Data Breach:</b> An incident where unauthorized access is gained to confidential or sensitive information, often leading to data theft or exposure.<br>
+<br>
+
+<li><b>Vulnerability:</b> A weakness or flaw in a system, software, or network that can be exploited by attackers to compromise security.<br>
+<br>
+
+<li><b>Nmap:</b> A network scanning tool used to discover hosts, services, and open ports on a network and assess their security.<br>
+<br>
+
+<li><b>Wireshark:</b> A network protocol analyzer that captures and inspects data packets traversing a network to diagnose and troubleshoot issues.<br>
+<br>
+
+<li><b>SQLmap:</b> An open-source tool used to automate the detection and exploitation of SQL injection vulnerabilities in web applications.<br>
+<br>
+
+<li><b>Malware:</b> Malicious software designed to harm, exploit, or otherwise compromise a computer system or network.
+</ul>
 <h2> Presentation</h2>
 
 <a href="https://docs.google.com/presentation/d/1YF7FvOgw71sHRwFDUPOS-McXoAcs030T/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Linux Security Tools </a>
